@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A4: Formulário de Cadastro</title>
+
+    <link rel="icon" href="https://kenzie.com.br/favicon.jpeg">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Formulário de Cadastro para o Kenzie Tech:</h1>
+        </header>
+        <form action="">
+            <fieldset>
+            <p><label for="nome"><strong>Nome</strong></label></p>
+            <input type="text" id="nome" name="nomeDoUsuario" 
+            placeholder="Digite seu nome aqui.." required>
+        
+            <p><label for="email"><strong>E-mail</strong></label></p>
+            <input type="email" id="email" name="email" placeholder="Digite seu email aqui.." required>
+           
+            <p><label for="mensagem"><strong>Descrição</strong></label></p>
+            <textarea name="descricao" id="mensagem" placeholder="Fale mais sobre você aqui..." cols="35" rows="5"></textarea>
+            
+            <p><label for="modulo"><strong>Módulo</strong></label></p>
+            <select name="modulo" id="modulo" required>
+                <option value="modulo1">Módulo 1</option>
+                <option value="modulo2">Módulo 2</option>
+                <option value="modulo3">Módulo 3</option>
+                <option value="modulo4">Módulo 4</option>
+                <option value="modulo5">Módulo 5</option>
+                <option value="modulo6">Módulo 6</option>
+            </select>
+           
+            <p><label for="senha"><strong>Senha</strong></label></p>
+            <input type="text" id="senha" name="senha" placeholder="Digite sua senha aqui.." required minlength="6"
+                maxlength="15">
+           
+            <p><label for="senhaConfirmar"><strong>Confirmar a Senha</strong></label></p>
+            <input type="text" id="senhaConfirmar" name="senhaConfirmar" placeholder="Digite sua senha novamente aqui.."
+                required minlength="6" maxlength="15">
+           
+            <p><strong>Deseja receber novidades em seu e-mail?</strong></p>
+            <label for="novidades">Sim</label>
+            <input type="radio" id="novidades" name="receberNovidades" value="sim" required>
+            <label for="novidades">Não</label>
+            <input type="radio" id="novidades" name="receberNovidades" value="nao" required>
+            
+            <p><button type="submit">Cadastrar</button></p>
+        </fieldset>
+        </form>
+    </main>
+    <footer>
+        <br>
+        <p>&copy; Kenzie Academy Brasil, 2022. Todos os direitos reservados &reg;</p>
+    </footer>
+</body>
+
+</html>
