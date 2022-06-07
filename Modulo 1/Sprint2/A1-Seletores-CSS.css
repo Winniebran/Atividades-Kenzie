@@ -9,13 +9,13 @@ body{
  font-style: normal;
 }
 
-.text1 {
+small {
     font-size: 16px;
     line-height: 32px;
     font-weight: 400;
 }
 
-.text2 {
+.text1 {
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
@@ -36,10 +36,9 @@ body{
     height: 176px;
     left: 16px;
     top: 416px;
-    
-}
+    }
 
-.weight-500 {
+#font-weight-500 {
     font-weight: 500;
 }
 
