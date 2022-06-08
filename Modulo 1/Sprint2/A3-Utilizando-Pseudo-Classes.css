@@ -9,10 +9,11 @@ main {
 main form {
     background-color: #f8f9fa;
     margin: 50px auto;
-    padding: 25px 20px 40px 20px;
+    padding: 20px;
     border-radius: 4px;
     max-width: 100%;
     width: 300px;
+    height: 250px;
     box-shadow: 0 0 1px 1px rgba(0,0,0, 0.12);
 }
 
@@ -21,21 +22,24 @@ main form h2 {
     font-weight: 600;
     margin: 10px;
     padding: 20px;
+    height: 35px;
 }
 
 main form label {
     font-size: 12px;
-    margin: 10px;
-    padding: 10px 0 5px 0;
+    margin-left: 10px;
 }
 
 main form input {
     background-color:#E9ECEF;
-    padding: 12px 75px;
+    padding: 12px;
     margin: 10px;
     border-radius: 5px;
     border: none;
     font-size: 12px;
+    width: 250px;
+    height: 15px;
+    max-width: 100%;
 }
 
 input:hover {
@@ -49,12 +53,15 @@ input:focus {
 main form button {
     background-color: #1971C2;
     color:aliceblue;
-    padding: 12px 120px;
+    padding: 10px;
     margin: 10px;
     border-radius: 5px;
     border:none;
     font-size: 12px;
     font-weight: 400;
+    width: 275px;
+    height: 35px;
+    max-width: 100%;
 }
 
 button:hover{
