@@ -1,7 +1,7 @@
 //Exercício 1
 function premiacao(livro, posicao) {
     for (let i = 0; i <= carrinhoCompras.length; i++) { 
-        if (livro[i] == "Vou ser Dev" && posicao == 0) {
+        if (livro[i] === "Vou ser Dev" && posicao == 0) {
             console.log("Cliente premiado")
         }
         else {
