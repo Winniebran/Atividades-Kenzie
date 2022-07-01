@@ -31,3 +31,7 @@ function somaNumeros (soma){
 }
 
 console.log(somaNumeros(somaArray))
+
+
+  
+  
