@@ -8,8 +8,8 @@ console.log(convertToArray(list))
 
 function convertToArray2(arr){
     let arrToList = []
-    for ( i = 1; i < arr.length; i++){
-        let newArr = `${i}º -${arr[i]}`
+    for ( i = 0; i < arr.length; i++){
+        let newArr = `${i+1}º -${arr[i]}`
         arrToList.push(newArr)
     }
     return arrToList
