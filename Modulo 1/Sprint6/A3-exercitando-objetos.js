@@ -183,7 +183,7 @@ console.log(contaCarrosVelhos(carros, 2022))
 
 //Exercício 10
 function insereDono(carList,index,people){
-    carros.push(carList[index].dono = [people])
+    carros.push(carList[index] = people)
     return carros
 }
 console.log(insereDono(carros, 1, {nome: 'Jhon Dhoe', cpf: '122-133-144-55'}))
