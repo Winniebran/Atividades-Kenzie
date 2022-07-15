@@ -31,25 +31,18 @@ function newEvent(object){
     tagAncora.addEventListener('click', function(a){
       if (object.liquidacao === true){
         a.preventDefault()
-      }  
-    })
-
-    tagSpan3.addEventListener('click', function(){
-      if(object.liquidacao === true){
-        tagSpan4.innerText = `Apenas hoje: R$ ${valorComDesconto}`
-      }else{
-        tagSpan4.innerText = ''
-      }
-
-      tagSpan3.addEventListener('click', function(){
-        if(tagSpan4.innerText == `Apenas hoje: R$ ${valorComDesconto}`){
-          tagSpan4.innerText = ''
-        }else{
-          tagSpan4.innerText = `Apenas hoje: R$ ${valorComDesconto}`
-        }
-      })
+      } 
     })
     
+    tagSpan3.addEventListener('click', function(){
+      if(object.liquidacao){
+        tagSpan4.innerText = `Apenas hoje: R$ ${valorComDesconto}`
+        object.liquidacao = false
+      }else{
+        tagSpan4.innerText = ''
+        object.liquidacao = true
+      }
+    })
 }
 newEvent(produto)
 
