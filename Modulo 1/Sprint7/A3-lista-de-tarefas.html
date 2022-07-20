@@ -14,9 +14,9 @@
 <body class="container">
     <header>
         <h1>MY TASK'S</h1>
-        <form action="">
-            <input type="text" name='search' id='search' placeholder="Pesquisar tarefa" required>
-            <button type="submit"><i class="fas fa-search"></i></button>
+        <form class="buscador">
+            <input type="text" name='search' id='search' placeholder="Pesquisar tarefa">
+            <button id="botao" type="submit"><i class="fas fa-search"></i></button>
         </form>
     </header>
 
@@ -25,15 +25,15 @@
         <h2>Inserir tarefa</h2>
         <form action="">
             <div>
-                <input type="text" name="" id="" placeholder="Digitar titulo da tarefa">
-                <select name="" id="" required>
+                <input type="text" name="" id="adicionar" placeholder="Digitar titulo da tarefa" required>
+                <select id="select" name="" required>
                     <option value="selecionar">Selecionar tipo</option>
                     <option value="urgente">Urgente</option>
                     <option value="prioritario">Prioritário</option>
                     <option value="normal">Normal</option>
                 </select>
             </div>
-            <button type="submit">Adicionar Tarefa na Lista</button>
+            <button type="submit" id="enviar">Adicionar Tarefa na Lista</button>
         </form>
     </section>
         <section class="tarefas">

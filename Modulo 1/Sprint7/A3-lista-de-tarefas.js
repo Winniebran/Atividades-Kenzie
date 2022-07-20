@@ -52,3 +52,33 @@ function createTask(task){
 createTask(arrUrgente)
 createTask (arrPrioritario)
 createTask (arrNormal)
+
+let inputBusca = document.querySelector("#search")
+let btnBusca = document.querySelector("#botao")
+
+let selectTarefa = document.querySelector("#select") //selecionar
+let addTarefa = document.querySelector("#adicionar") //input
+let btnSubmit = document.querySelector("#enviar")
+
+btnBusca.addEventListener('click', function(e){
+  e.preventDefault()
+  createUl.innerHTML = ""
+  let resultadoBusca = []
+  
+  for (let i = 0; i < tasks.length; i++){
+    if (inputBusca.value == tasks[i].titulo){
+      resultadoBusca.push(tasks[i].titulo)
+    }
+  }
+  createTask(resultadoBusca)
+})
+
+btnSubmit.addEventListener('click', function(){
+  let newObject = {}
+  newObject.titulo = addTarefa.value
+  newObject.tipo = selectTarefa.value
+  
+  tasks.push(newObject)
+  
+  console.log(newObject)
+})
